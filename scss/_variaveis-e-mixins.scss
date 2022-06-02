@@ -10,7 +10,7 @@ $font-2: "Aref Ruqaa", serif;
 $font-1: "PT Mono", monospace;
 
 @function em($pixel, $contexto: 16) {
-  @return $pixel / $contexto + em;
+  @return calc($pixel / $contexto) + em;
 }
 
 @mixin tipo-1($size) {
